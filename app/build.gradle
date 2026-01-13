@@ -41,7 +41,7 @@ android {
 
     defaultConfig {
         applicationId "tw.idv.palatis.xappdebug"
-        minSdkVersion 24
+        minSdkVersion 30
         targetSdkVersion 35
         versionCode 100006
         versionName "1.0.6"
@@ -66,8 +66,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     namespace 'tw.idv.palatis.xappdebug'
@@ -106,8 +106,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     compileOnly project(':hiddenapi-stubs')
-    implementation("dev.rikka.tools.refine:runtime:4.3.0")
-
+    implementation("dev.rikka.tools.refine:runtime:4.4.0")
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.preference:preference:1.2.1'

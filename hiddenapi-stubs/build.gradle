@@ -21,8 +21,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     namespace 'tw.idv.palatis.xappdebug.hiddenapi'
@@ -31,6 +31,6 @@ android {
 dependencies {
     implementation 'androidx.annotation:annotation:1.8.2'
 
-    annotationProcessor 'dev.rikka.tools.refine:annotation-processor:4.3.0'
-    compileOnly 'dev.rikka.tools.refine:annotation:4.3.0'
+    annotationProcessor 'dev.rikka.tools.refine:annotation-processor:4.4.0'
+    compileOnly 'dev.rikka.tools.refine:annotation:4.4.0'
 }
